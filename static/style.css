@@ -1,3 +1,9 @@
+@media (max-width: 768px) {
+    body {
+        height:100vh;
+    }
+}
+
 .nav {
     margin-top: 0.5rem;
     background: #000872;
