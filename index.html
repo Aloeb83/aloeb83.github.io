@@ -1,0 +1,91 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="static/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <title>Crate Calculator</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav class="nav">
+                <a class="nav__header" href="">Crate Calculator</a>
+            </nav>
+        </div>
+
+        <div class="our-content background">
+            <div class="flex-box-calculator">
+                <select name="rarity" id="rarity" onchange="rarity(this)">
+                    <option value="" disabled selected>Choose Rarity</option>
+                    <option value="Rare">Rare</option>
+                    <option value="Very-Rare">Very Rare</option>
+                    <option value="Import">Import</option>
+                    <option value="Exotic">Exotic</option>
+                    <option value="Black-Market">Black Market</option>
+                </select>
+
+                <select name="painted" id="painted" onchange="painted(this)">
+                    <option value="" disabled selected>Is the desired item painted?</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+
+                <select name="specific-paint" id="specific-paint" onchange="specificPaint(this)">
+                        <option value="" disabled selected>Number of wanted colors?</option>
+                        <option value="13">0 (Select if no paint)</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">19</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                </select>
+
+                <select name="certifaction" id="certifaction" onchange="certification(this)">
+                        <option value="" disabled selected>Is the item certified?</option>
+                        <option value="Correct">Yes</option>
+                        <option value="Incorrect">No</option>
+                </select>
+
+                <select name="certifaction" id="certifaction" onchange="tiered(this)">
+                        <option value="" disabled selected>Is the item of a specific teir?</option>
+                        <option value="None">None (Select if item isn't certified)</option>
+                        <option value="Tier-1">Tier 1</option>
+                        <option value="Tier-2">Tier 2</option>
+                        <option value="Tier-3">Tier 3</option>
+                        <option value="Tier-4">Tier 4</option>
+                        <option value="Tier-5">Tier 5</option>
+                </select>
+
+
+                <select name="amount" id="amount" onchange="amounts(this)">
+                        <option value="" disabled selected>Number of items of like rarity?</option>
+                        <option value="One">1</option>
+                        <option value="Two">2</option>
+                        <option value="Three">3</option>
+                        <option value="Four">4</option>
+                        <option value="Five">5</option>
+                </select>
+
+            </div>
+            <div class="flex-box-button">
+                <button class="btn btn-primary" onclick="total()">Calculate</button>
+                <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+            
+
+            <div class="flex-box-container-1">
+                <div id="flex-box-result"></div>
+            </div>
+        </div>
+
+        <script src="static/script.js"></script>
+    </body>
+</html>

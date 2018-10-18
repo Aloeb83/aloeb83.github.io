@@ -1,0 +1,92 @@
+.nav {
+    margin-top: 0.5rem;
+    background: #000872;
+    height: 4.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+}
+
+.nav a{
+    margin-right: 2rem;
+    margin-left: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-family: 'Anton', sans-serif;
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+body::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    content: " ";
+	border-bottom: 0.5rem solid #e48100;
+    z-index: 9999;
+}
+
+body {
+    background-image: url("https://vignette.wikia.nocookie.net/rocketleague/images/f/fd/Mannfield-Normal.png/revision/latest?cb=20160707173155");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%
+}
+
+.our-content {
+    font-family: 'Raleway', sans-serif;
+    line-height: 2.5em;
+    font-weight: 900;
+    margin: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    align-self: center;
+}
+
+.background {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3xWRJm1zNj_GiPok3CC13bd2u6MEOzSoVYH_5GN9MHBewE5wpew");
+}
+
+.flex-box-calculator {
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-box-button {
+    display: flex;
+    padding: 100px;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.flex-box-container-1 {
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    text-align: center;
+}
+
+.flex-box-container-1 div{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
