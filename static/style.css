@@ -38,6 +38,8 @@ body::before {
 body {
     background-image: url("https://vignette.wikia.nocookie.net/rocketleague/images/f/fd/Mannfield-Normal.png/revision/latest?cb=20160707173155");
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 100%;
     height: 100%
 }
