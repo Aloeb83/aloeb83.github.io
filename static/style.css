@@ -4,6 +4,13 @@
     }
 }
 
+html {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .nav {
     margin-top: 0.5rem;
     background: #000872;
